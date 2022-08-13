@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
          
     
 </head>
@@ -31,28 +31,18 @@
     <div class="container">
         <div class="forms">
             <div class="form login">
-                <span class="title">Login</span>
+                <span class="title">Forgot Password</span>
             
-                <form action="login.php" method="POST">
+                <form action="forgot_data.php" method="POST">
+
                     <div class="input-field">
                         <input type="text" name="u-name" placeholder="Enter your Username" required>
                         <i class="uil uil-envelope icon"></i>
                     </div>
                     <div class="input-field">
-                        <input type="password" name="u-pass" class="password" placeholder="Enter your password" required>
-                        <i class="uil uil-lock icon"></i>
-                        <i class="uil uil-eye-slash showHidePw"></i>
+                        <input type="email" name="u-name" placeholder="Enter your Email Id" required>
+                        <i class="uil uil-envelope icon"></i>
                     </div>
-
-                    <div class="checkbox-text">
-                        <div class="checkbox-content">
-                            <input type="checkbox" id="logCheck">
-                            <label for="logCheck" class="text">Remember me</label>
-                        </div>
-                        
-                        <a href="forgot/forgot_ui.php" class="text">Forgot password?</a>
-                    </div>
-
                     <div class="input-field button">
                         <input type="submit" value="Login">
                     </div>

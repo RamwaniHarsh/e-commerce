@@ -1,7 +1,6 @@
 <?php
-$user = $_GET
-['username'];
-echo "Hello ".$user; 
+$id = $_GET['id'];
+echo "Hello ! Your Id Number = ".$id; 
 
 
 ?>
