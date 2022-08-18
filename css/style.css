@@ -12,14 +12,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #29242446;
+    background-color: #ffffff;
 }
-
 .container{
     position: relative;
     max-width: 430px;
     width: 100%;
-    background: #fff;
+    background: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -66,7 +65,7 @@ body{
     bottom: 0;
     height: 3px;
     width: 30px;
-    background-color: #8b8f9c;
+    background-color: #022dba;
     border-radius: 25px;
 }
 .form .input-field{
