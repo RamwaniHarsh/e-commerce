@@ -9,9 +9,7 @@
     $result1 = mysqli_query($conn, $query1);
     $query2 = "select * from tbl_states";
     $result2= mysqli_query($conn, $query2);
-    $query3 = "select * from tbl_cities";
-    $result3 = mysqli_query($conn, $query3);
-
+    
     $country = "";
     $state = "";
     $city = "";
@@ -22,7 +20,7 @@
 <html lang="en">
 <head>
 <style>
-/* .error
+.error
 {   
     font-size: 20px;
     text-align: center;
@@ -68,7 +66,7 @@
   position: relative;
   left: -35px;
   content: "&#10006;";
-} */
+}
 </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -122,7 +120,7 @@
                             <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
                             <p id="number" class="invalid">A <b>number</b></p>
                             <p id="length" class="invalid">Minimum <b>8 characters</b></p>
-                        </div>
+                        </div> 
                         <div class="input-field">
                             <label>Gender</label>
                             <select required name="gender">
@@ -228,7 +226,10 @@
                         //         $result3 = mysqli_query($conn, $state_query);
                         //     }
                         // }
+                        $query3 = "select * from tbl_cities ORDER BY name ASC";
+                        $result3 = mysqli_query($conn, $query3);
                         ?>
+                        
 
 
                         <div class="input-field">

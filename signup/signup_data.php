@@ -29,9 +29,9 @@
         $conn = mysqli_connect($hostname,$username,$password,$dbname);
 
         $select_query_user_data = mysqli_query( $conn,"select * from user_data where username='". $signup_data['u_name'] ."'");
-        $select_query_login_data = mysqli_query( $conn,"select * from login_data where username='". $signup_data['u_name'] ."'");
+        $select_query_login_data = mysqli_query( $conn,"select * from user_login_data where username='". $signup_data['u_name'] ."'");
         $insert_query_user_data = "insert into user_data (first_name, last_name, username, password, gender, dateofbirth, education, designation, mobile, email, address_type, nationality, state, city, address_line, block_no, pin_no) VALUES ('". $signup_data['f_name'] ."','". $signup_data['l_name'] ."','". $signup_data['u_name'] ."','". $signup_data['u_pass'] ."','". $signup_data['gender'] ."','". $signup_data['dob'] ."','". $signup_data['education'] ."','". $signup_data['designation'] ."',". $signup_data['mobile'] .",'". $signup_data['email'] ."','". $signup_data['addr_type'] ."','". $signup_data['nat_type'] ."','". $signup_data['sta_type'] ."','". $signup_data['city'] ."','". $signup_data['address_line'] ."','". $signup_data['block_no'] ."',". $signup_data['pin_number'] .")";
-        $insert_query_login_data = "insert into login_data (username, password, mobile, email) VALUES ('". $signup_data['u_name'] ."','". $signup_data['u_pass'] ."',". $signup_data['mobile'] .",'". $signup_data['email'] ."')";
+        $insert_query_login_data = "insert into user_login_data (username, password, mobile, email) VALUES ('". $signup_data['u_name'] ."','". $signup_data['u_pass'] ."',". $signup_data['mobile'] .",'". $signup_data['email'] ."')";
 
         $check_user_data = mysqli_num_rows($select_query_user_data);
         $check_login_data = mysqli_num_rows($select_query_login_data);
